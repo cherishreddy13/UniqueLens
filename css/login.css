@@ -1,0 +1,15 @@
+#head{
+   text-align: center;
+}
+#name{
+   text-align: center;
+}
+#email{
+   text-align: center;
+}
+#password{
+   text-align: center;
+}
+.login{
+   border-image: url(gallery-5.JPG);
+}
