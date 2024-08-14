@@ -1090,18 +1090,14 @@ a:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 80%;
+  position: relative;
 }
 
 video {
-  width: 90%;
-  height: 90%;
-  object-fit: cover;
+  width: 70%;
+  height: 70%;
+  object-fit: fill;
 }
-.about_section {
-  display: flex;   
 
-  align-items: center;
-  justify-content: center;
-}
 /*# sourceMappingURL=style.css.map */
