@@ -1090,14 +1090,17 @@ a:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
-  position: relative;
+  width: 90%;
+  position: static;
+  border-radius: 20%;
+  padding-left: 380px;
 }
 
 video {
   width: 70%;
   height: 70%;
   object-fit: fill;
+  border-radius: 10%;
 }
 
 /*# sourceMappingURL=style.css.map */
