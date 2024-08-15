@@ -58,7 +58,7 @@
               </span>
             </a>
             <div class="user_option">
-              <a href="#">
+              <a href="login.html">
                 login
               </a>
               <form class="form-inline ">
@@ -73,33 +73,40 @@
 
   </div>
 <!-- request a quote section -->
- <section class="quote">
-   <br>
-   <div id="head"><h1>REQUEST A QUOTE</h1></div>
-   <br>
-   <div id="name"><b>NAME : <input type="name"></b></div>
-    <br>
-    <br>
-    <div id="email"><b>EMAIL : <input type="email"> </b></div>
-    <br>
-    <br>
-    <div id="placeofshoot"><b>PLACE OF SHOOT: <input type="place"></b></div>
-    <br>
-    <br>
-    <form>
+<section class="quote">
+  <br>
+  <div id="head"><h1>REQUEST A QUOTE</h1></div>
+  <br>
+  <form method="post" action="send_email.php">
+      <div id="name"><b>NAME : <input type="text" name="name" required></b></div>
+      <br>
+      <br>
+      <div id="email"><b>EMAIL : <input type="email" name="email" required></b></div>
+      <br>
+      <br>
+      <div id="placeofshoot"><b>PLACE OF SHOOT: <input type="text" name="placeofshoot" required></b></div>
+      <br>
+      <br>
       <div id="budgethead">
-        <b>BUDGET</b>
-        <label for="budget">Select Budget:</label>
-        <select id="budget">
-          <option value="any">select any option</option>
-          <option value="below 20k">below 20k</option>
-          <option value="below 30k">below 30k</option>
-          <option value="above 30k">above 30k</option>
-        </select>
+          <b>BUDGET</b>
+          <label for="budget">Select Budget:</label>
+          <select id="budget" name="budget" required>
+              <option value="any">Select any option</option>
+              <option value="below 20k">Below 20k</option>
+              <option value="below 30k">Below 30k</option>
+              <option value="above 30k">Above 30k</option>
+          </select>
       </div>
-    </form>    
-   <br><br><br><br><br>
- </section>
+      <br>
+      <div id="submit"><button type="submit">Submit</button></div>
+      <form action="quote.php" method="post">
+        <!-- form fields here -->
+        <input type="submit" value="Send Quote Request">
+    </form>
+  </form>    
+  <br><br><br><br><br>
+</section>
+
  <!-- end of reqesting quote section -->
   <!-- info section -->
 
