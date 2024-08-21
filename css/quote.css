@@ -14,3 +14,28 @@
 #budgethead{
    text-align: center;
 }
+#submit{
+   text-align: center;
+   height: 25px;
+   border: none;
+   outline: none;
+   border-radius: 50px;
+}
+body {
+   margin: 0;
+   overflow: hidden;
+ }
+ #phno{
+   text-align: center;
+ }
+
+ #box{
+   width: 300px;
+   height: 25px;
+   border: none;
+   outline: none;
+   padding-left: 10px;
+   font-weight: 300;
+   color: grey;
+   border-radius: 50px;
+ }
