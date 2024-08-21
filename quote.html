@@ -77,20 +77,25 @@
   <br>
   <div id="head"><h1>REQUEST A QUOTE</h1></div>
   <br>
-  <form method="post" action="send_email.php">
-      <div id="name"><b>NAME : <input type="text" name="name" required></b></div>
+  <form action="https://api.web3forms.com/submit" method="POST">
+    <div>
+      <input type="hidden" name="access_key" value="a42132b6-d2d7-4d33-af5e-eeab91ee65d3">
+      <div id="name"><b>NAME : <input id="box" type="text" name="name" required></b></div>
       <br>
       <br>
-      <div id="email"><b>EMAIL : <input type="email" name="email" required></b></div>
+      <div id="email"><b>EMAIL : <input id="box" type="email" name="email" required></b></div>
       <br>
       <br>
-      <div id="placeofshoot"><b>PLACE OF SHOOT: <input type="text" name="placeofshoot" required></b></div>
+      <div id="placeofshoot"><b>PLACE OF SHOOT: <input id="box" type="text" name="placeofshoot" required></b></div>
+      <br>
+      <br>
+      <div id="phno"><b>ENTER YOUR PHONE NUMBER : </b><input id="box" type="number" name="phno"></div>
       <br>
       <br>
       <div id="budgethead">
           <b>BUDGET</b>
-          <label for="budget">Select Budget:</label>
-          <select id="budget" name="budget" required>
+          <label for="budget"></label>
+          <select id="box" name="budget" required>
               <option value="any">Select any option</option>
               <option value="below 20k">Below 20k</option>
               <option value="below 30k">Below 30k</option>
@@ -99,10 +104,7 @@
       </div>
       <br>
       <div id="submit"><button type="submit">Submit</button></div>
-      <form action="quote.php" method="post">
-        <!-- form fields here -->
-        <input type="submit" value="Send Quote Request">
-    </form>
+    </div>
   </form>    
   <br><br><br><br><br>
 </section>
