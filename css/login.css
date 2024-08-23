@@ -10,6 +10,9 @@
 #password{
    text-align: center;
 }
+#button{
+   text-align: center;
+}
 .login{
    border-image: url(gallery-5.JPG);
 }
